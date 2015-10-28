@@ -1,0 +1,162 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq0\fcharset128 Courier New;}{\f6\froman\fprq0\fcharset128 Calibri;}{\f7\fnil\fprq2\fcharset0 Droid Sans Fallback;}{\f8\fnil\fprq2\fcharset0 FreeSans;}{\f9\fswiss\fprq0\fcharset128 FreeSans;}}
+{\colortbl;\red0\green0\blue0;\red34\green139\blue34;\red160\green32\blue240;\red0\green0\blue255;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af7\dbch\af8\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af9 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af9\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af9 Index;}
+}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67241986}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh15840\paperw12240\margl1800\margr1800\margt1440\margb1440\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+ }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393{\cf2\rtlch \ltrch\loch\fs20\lang9\loch\f5
+%  Program to find the circular convolution of array having same length}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393{\cf2\rtlch \ltrch\loch\fs20\lang9\loch\f5
+%%}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+clc;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+clear }{\cf3\rtlch \ltrch\loch\fs20\lang9\loch\f5
+all}{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+x1=[1,2,3,4];}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+x2=[2,3,4,5];}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+ }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+l1=length(x1);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+l2=length(x2);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf2\rtlch \ltrch\loch\fs20\lang9\loch\f5
+%%}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf2\rtlch \ltrch\loch\fs20\lang9\loch\f5
+%using Frequency domain}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xf1=fft(x1);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xf2=fft(x2);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xf3=xf1.*xf2;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xc1=ifft(xf3);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf2\rtlch \ltrch\loch\fs20\lang9\loch\f5
+%%}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf2\rtlch \ltrch\loch\fs20\lang9\loch\f5
+%using time domain}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+H=zeros(4);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+h=x2';}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf4\rtlch \ltrch\loch\fs20\lang9\loch\f5
+for}{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+ m= 1:max(l1,l2);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+H(:,m)=h;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+   }{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+h=[h(end);h(1:end-1)];}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf4\rtlch \ltrch\loch\fs20\lang9\loch\f5
+end}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xc2=H*x1';}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf2\rtlch \ltrch\loch\fs20\lang9\loch\f5
+%%}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf2\rtlch \ltrch\loch\fs20\lang9\loch\f5
+%using time domain definition method}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf4\rtlch \ltrch\loch\fs20\lang9\loch\f5
+for}{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+ n=0:3;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+sum=0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+    }{\cf4\rtlch \ltrch\loch\fs20\lang9\loch\f5
+for}{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+ k=0:3}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+        }{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+sum=sum+x1(k+1)*x2(mod(n-k,4)+1);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+    }{\cf4\rtlch \ltrch\loch\fs20\lang9\loch\f5
+end}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs20\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xc3(n+1)=sum;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf4\rtlch \ltrch\loch\fs20\lang9\loch\f5
+end}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+using_inbuilt_function= cconv(x1,x2,max(l1,l2))}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xc1}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xc2}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs20\lang9\loch\f5
+xc3}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393{\cf1\rtlch \ltrch\loch\fs24\lang1033\loch\f5
+%----------------------------------------------------------%}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393{\cf1\rtlch \ltrch\loch\fs24\lang1033\loch\f5
+%    \tab \tab \tab Command Window Output\tab \tab \tab     %}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393{\cf1\rtlch \ltrch\loch\fs24\lang1033\loch\f5
+%----------------------------------------------------------%}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+using_inbuilt_function =}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs24\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+36    38    36    30}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+xc1 =}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs24\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+36    38    36    30}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+xc2 =}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs24\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+36}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs24\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+38}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs24\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+36}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs24\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+30}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+xc3 =}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\li1440\ri0\lin1440\rin0\fi0{\cf1\rtlch \ltrch\fs24\lang9\loch\f5
+    }{\cf1\rtlch \ltrch\loch\fs24\lang9\loch\f5
+36    38    36    30}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang16393\sl276\slmult1\li1440\ri0\lin1440\rin0\fi0\sb0\sa200\rtlch \ltrch\loch
+
+\par }
